@@ -11,6 +11,13 @@
 		727202202B58893F002368E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272021F2B58893F002368E0 /* ContentView.swift */; };
 		727202222B588941002368E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727202212B588941002368E0 /* Assets.xcassets */; };
 		727202252B588941002368E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727202242B588941002368E0 /* Preview Assets.xcassets */; };
+		7272022F2B588C35002368E0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7272022E2B588C35002368E0 /* Game.swift */; };
+		727202322B588DA9002368E0 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727202312B588DA9002368E0 /* Webservice.swift */; };
+		727202352B588FFA002368E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727202342B588FFA002368E0 /* Constants.swift */; };
+		727202372B589354002368E0 /* GamesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727202362B589354002368E0 /* GamesList.swift */; };
+		727202392B589D94002368E0 /* GameListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727202382B589D94002368E0 /* GameListVM.swift */; };
+		72E90FEC2B5EFD4F00138C5F /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E90FEB2B5EFD4F00138C5F /* Match.swift */; };
+		72E90FF02B5F242900138C5F /* BlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E90FEF2B5F242900138C5F /* BlurEffectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		727202212B588941002368E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		727202242B588941002368E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		727202262B588941002368E0 /* SportsBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SportsBar.entitlements; sourceTree = "<group>"; };
+		7272022E2B588C35002368E0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		727202312B588DA9002368E0 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		727202342B588FFA002368E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		727202362B589354002368E0 /* GamesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesList.swift; sourceTree = "<group>"; };
+		727202382B589D94002368E0 /* GameListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListVM.swift; sourceTree = "<group>"; };
+		72E90FEB2B5EFD4F00138C5F /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		72E90FEF2B5F242900138C5F /* BlurEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				7272021D2B58893F002368E0 /* SportsBarApp.swift */,
-				7272021F2B58893F002368E0 /* ContentView.swift */,
+				7272022C2B588B2A002368E0 /* Views */,
+				7272022D2B588C18002368E0 /* Models */,
+				727202302B588D6B002368E0 /* Services */,
+				727202332B588FE8002368E0 /* Utils */,
 				727202212B588941002368E0 /* Assets.xcassets */,
 				727202262B588941002368E0 /* SportsBar.entitlements */,
 				727202232B588941002368E0 /* Preview Content */,
@@ -67,6 +84,42 @@
 				727202242B588941002368E0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7272022C2B588B2A002368E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7272021F2B58893F002368E0 /* ContentView.swift */,
+				727202362B589354002368E0 /* GamesList.swift */,
+				72E90FEB2B5EFD4F00138C5F /* Match.swift */,
+				72E90FEF2B5F242900138C5F /* BlurEffectView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7272022D2B588C18002368E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7272022E2B588C35002368E0 /* Game.swift */,
+				727202382B589D94002368E0 /* GameListVM.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		727202302B588D6B002368E0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				727202312B588DA9002368E0 /* Webservice.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		727202332B588FE8002368E0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				727202342B588FFA002368E0 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				727202352B588FFA002368E0 /* Constants.swift in Sources */,
 				727202202B58893F002368E0 /* ContentView.swift in Sources */,
+				7272022F2B588C35002368E0 /* Game.swift in Sources */,
+				72E90FEC2B5EFD4F00138C5F /* Match.swift in Sources */,
+				727202392B589D94002368E0 /* GameListVM.swift in Sources */,
+				72E90FF02B5F242900138C5F /* BlurEffectView.swift in Sources */,
+				727202322B588DA9002368E0 /* Webservice.swift in Sources */,
 				7272021E2B58893F002368E0 /* SportsBarApp.swift in Sources */,
+				727202372B589354002368E0 /* GamesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +335,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SportsBar/Preview Content\"";
+				DEVELOPMENT_TEAM = QA48RXZCXY;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,8 +363,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SportsBar/Preview Content\"";
+				DEVELOPMENT_TEAM = QA48RXZCXY;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
