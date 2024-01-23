@@ -74,7 +74,7 @@ struct GameVM {
         case "overtime":
             "OT"
         default:
-            ""
+            "Halftime"
         }
     }
 

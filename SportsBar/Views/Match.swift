@@ -40,8 +40,14 @@ struct Match: View {
                     }
                     .padding(.bottom, 0.5)
                     .font(.largeTitle)
-                    Text("\(game.quarter) - \(game.timeRemainingString)")
-                        .foregroundColor(Color.green)
+                    if game.quarter == "Halftime" {
+                        Text("Halftime")
+                            .foregroundColor(Color.green)
+                    }
+                    else {
+                        Text("\(game.quarter) - \(game.timeRemainingString)")
+                            .foregroundColor(Color.green)
+                    }
                 }
             }
             else {
